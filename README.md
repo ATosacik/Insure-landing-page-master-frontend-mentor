@@ -20,6 +20,10 @@ Users should be able to:
 
 ### Screenshot
 
+![Screenshot 2024-03-12 at 20-50-24 Frontend Mentor Insure landing page](https://github.com/ATosacik/Insure-landing-page-master-frontend-mentor/assets/111382391/a75cd8c7-0e08-413d-996f-24c1e80bea02)
+![Screenshot 2024-03-12 at 20-51-13 Frontend Mentor Insure landing page](https://github.com/ATosacik/Insure-landing-page-master-frontend-mentor/assets/111382391/ac3cc3e5-575b-4b01-be80-0415c9702db8)
+![Screenshot 2024-03-12 at 20-51-50 Frontend Mentor Insure landing page](https://github.com/ATosacik/Insure-landing-page-master-frontend-mentor/assets/111382391/18c18074-51fa-4d2a-9ce9-29f80800c35a)
+
 ## My process
 
 ### Built with
