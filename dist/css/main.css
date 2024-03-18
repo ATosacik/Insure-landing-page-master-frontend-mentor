@@ -1,0 +1,234 @@
+/* ------------------- */
+/* Custom properties   */
+/* ------------------- */
+
+:root {
+  /* * Colors: * */
+  /* ? primary colors ? */
+  --clr-primary-1: 256, 26%, 20%;
+  --clr-primary-2: 216, 30%, 68%;
+  /* ? neutral colors ? */
+  --clr-neutral-1: 270, 9%, 17%;
+  --clr-neutral-2: 273, 4%, 51%;
+  --clr-neutral-3: 0, 0%, 98%;
+  /* * Typography: * */
+  /* ? fonts families ? */
+  --ff-primary-1: 'Karla', sans-serif;
+  --ff-primary-2: 'DM Serif Display', sans-serif;
+  /* ? font sizes ? */
+  --fs-1000: clamp(2.986rem, 7vw, 4.5rem);
+  --fs-900: clamp(2.788rem, 4vw, 3.8rem);
+  --fs-800: 1.874rem;
+  --fs-700: 1.728rem;
+  --fs-600: 1.44rem;
+  --fs-500: 1.225rem;
+  --fs-400: 1rem;
+  --fs-300: 0.9rem;
+  --fs-200: 0.694rem;
+}
+
+/* ------------------- */
+/* Body set up         */
+/* ------------------- */
+
+body {
+  line-height: 1.5;
+  min-height: 100svh;
+  position: relative;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: var(--fs-500);
+  font-family: var(--ff-primary-1);
+  background-color: rgb(255, 206, 99);
+  color: hsl(var(--clr-neutral-1))
+}
+
+/* ------------------- */
+/* Reset               */
+/* ------------------- */
+
+/* Box sizing */
+*, *::before, *::after { box-sizing: border-box; }
+
+/* Reset spacing */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+
+h1, h2, h3, h4, h5, h6, p { font-weight: 400; }
+
+/* make images easier to work with */
+img, picutre {
+  max-width: 100%;
+  display: block;
+}
+
+/* make form elements easier to work with */
+input, button, textarea, select { font: inherit; }
+
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ------------------- */
+/* Utility classes     */
+/* ------------------- */
+
+/* general */
+
+/* color */
+
+/* typography */
+
+.ff-primary-1 { font-family: var(--ff-primary-1) !important; }
+.ff-primary-2 { font-family: var(--ff-primary-2) !important; }
+
+.fs-1000 { font-size: var(--fs-1000); }
+.fs-900 { font-size: var(--fs-900); }
+.fs-800 { font-size: var(--fs-800); }
+.fs-700 { font-size: var(--fs-700); }
+.fs-600 { font-size: var(--fs-600); }
+.fs-500 { font-size: var(--fs-500); }
+.fs-400 { font-size: var(--fs-400); }
+.fs-300 { font-size: var(--fs-300); }
+.fs-200 { font-size: var(--fs-200); }
+
+h1, h2, h3, h4, h5, h6 { 
+  line-height: 1.1;
+  font-family: var(--ff-primary-2);
+}
+
+p {
+  color: hsl(var(--clr-neutral-2));
+}
+
+/* ------------------- */
+/* Compontents         */
+/* ------------------- */
+
+.button__main {
+  text-transform: uppercase;
+  padding: .5rem 2rem;
+  border-width: 1.5px;
+  border-style: solid;
+  font-weight: 600;
+}
+
+.social-media-icon:hover,
+.social-media-icon:focus {
+  filter: brightness(0) saturate(100%) invert(14%) sepia(2%) saturate(2609%) hue-rotate(228deg) brightness(97%) contrast(93%);
+}
+
+@media (max-width: 34.999em) {
+  .nav__list[data-visible="true"] {
+    position: absolute; 
+    padding-top: 2rem; 
+    flex-direction: column; 
+    width: 100%; 
+    top: 100%;
+    color: hsl(var(--clr-neutral-3));
+    font-size: var(--fs-500);
+  }
+
+  .nav__list[data-visible="true"] > img {
+    display: flex;
+  }
+
+
+}
+
+nav  .button__main {
+  background-color: hsl(var(--clr-neutral-1)) !important;
+  color: hsl(var(--clr-neutral-3)) !important;
+  border-color: hsl(var(--clr-neutral-3)) !important;
+  width: 90%;
+}
+
+nav  .button__main:is(:hover, :focus) {
+  background-color: hsl(var(--clr-neutral-3)) !important;
+  color: hsl(var(--clr-neutral-1)) !important;
+}
+
+@media (min-width: 35em) {
+  .nav__list {
+    display: flex !important;
+    font-size: var(--fs-400);
+    flex-wrap: wrap;
+  }
+  .nav__bg {
+    display: none !important;
+  }
+  nav  .button__main {
+    background-color: hsl(var(--clr-neutral-3)) !important;
+    color: hsl(var(--clr-neutral-1)) !important;
+    border-color: hsl(var(--clr-neutral-1)) !important;
+    width: auto !important;
+  }
+  nav  .button__main:hover {
+    background-color: hsl(var(--clr-neutral-1)) !important;
+    color: hsl(var(--clr-neutral-3)) !important;
+  }
+  .nav__toggle {
+    display: none !important;
+  }
+}
+
+/* ------------------- */
+/* Layout              */
+/* ------------------- */
+
+.grid-container {
+  display: grid;
+  margin-inline: auto;
+  align-items: start;
+  grid-template-columns: 
+  minmax(var(--container-x-spacing, 1.5rem), 1fr)  
+  minmax(0, 80rem) 
+  minmax(var(--container-x-spacing, 1.5rem), 1fr);
+}
+
+.grid-container > *:nth-child(1) {
+  grid-column: 2;
+}
+
+@media (min-width: 60em) {
+  .grid-container__intro {
+    grid-template-columns: 
+    minmax(var(--container-x-spacing, 1.5rem), 1fr)  
+    repeat(2,minmax(0, 40rem)) 
+    minmax(var(--container-x-spacing, 1.5rem), 1fr);
+  }
+
+  .grid-container__intro > *:nth-child(1) {
+    grid-column: 2;
+  }
+
+  .grid-container__intro > *:nth-child(2) {
+    grid-column: 3;
+  }
+}

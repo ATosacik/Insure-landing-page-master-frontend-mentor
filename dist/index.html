@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- Imports -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet">
+  <!-- Title -->
+  <title>Frontend Mentor | Insure landing page</title>
+  <!-- Css -->
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/tailwind.css">
+  <!-- JavaScript -->
+  <script defer src="./js/main.js"></script>
+</head>
+
+<body class="bg-[hsl(var(--clrn-neutral-3))] text-[hsl(var(--clr-primary-1))] relative">
+  <div class="nav__bg absolute z-[99] w-full h-full bg-[hsl(var(--clr-neutral-1))] hidden"></div>
+  <header class="w-full relative">
+    <div class="header-bg absolute lg:h-[83%] h-full w-full bg-[hsl(var(--clr-primary-1))] z-[-1]"></div>
+    <nav class="w-full bg-[hsl(var(--clr-neutral-3))] relative z-[100]">
+      <div class="grid-container w-full">
+        <div class="w-full flex items-center justify-between py-6 relative gap-8">
+          <a href="#">
+            <img src="./images/logo.svg" alt="logo">
+          </a>
+          <div class="nav__list items-center gap-8 hidden" data-visible="false" aria-controls="open / close nav">
+            <a class="tracking-wide uppercase font-semibold" href="#">How we work</a>
+            <a class="tracking-wide uppercase font-semibold" href="#">Blog</a>
+            <a class="tracking-wide uppercase font-semibold" href="#">Account</a>
+            <a class="button__main tracking-wide transition-colors w-auto text-center" href="#">View
+              plans</a>
+            <img class="absolute bottom-[-120%] sm:hidden hidden" src="./images/bg-pattern-mobile-nav.svg"
+              alt="bg-pattern">
+          </div>
+          <button class="nav__toggle flex sm:hidden" aria-controls="open / close nav" aria-expanded="false">
+            <img src="./images/icon-hamburger.svg" alt="hamburger">
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div class="intro relative w-full">
+      <img src="./images/bg-pattern-intro-left-desktop.svg" alt="bg-pattern"
+        class="absolute left-0 bottom-[-24%] hidden lg:flex">
+      <img class="absolute right-0 top-0 hidden lg:flex" src="./images/bg-pattern-intro-right-desktop.svg"
+        alt="bg-pattern">
+      <div class="grid-container" style="--container-x-spacing: 0;">
+        <div class="flex flex-col items-center lg:flex-row-reverse lg:items-start">
+          <div class="lg:flex-1">
+            <img class="md:hidden flex" src="./images/image-intro-mobile.jpg" alt="intro-img">
+            <img class="md:flex lg:mt-32 hidden" src="./images/image-intro-desktop.jpg" alt="intro-img">
+          </div>
+          <div
+            class="lg:flex-1 relative space-y-4 text-[hsl(var(--clr-neutral-3))] py-24 text-center px-[1.5rem] lg:text-left">
+            <img class="absolute md:hidden flex top-0 left-0" src="./images/bg-pattern-intro-left-mobile.svg"
+              alt="bg-pattern">
+            <img class="absolute md:hidden flex bottom-[-34%] right-0" src="./images/bg-pattern-intro-right-mobile.svg"
+              alt="bg-pattern">
+            <div class="w-40 h-[1px] hidden lg:flex bg-[hsl(var(--clr-neutral-2))]"></div>
+            <h1 class="fs-1000 z-10 relative lg:max-w-[15ch] md:max-w-[20ch] md:mx-auto lg:mx-0 lg:pt-4">Humanizing your
+              insurance.</h1>
+            <p class="pb-6 z-10 relative text-[hsl(var(--clr-neutral-3))] md:max-w-[40rem] md:mx-auto lg:mx-0">Get your
+              life
+              insurance
+              coverage easier and
+              faster. We blend our expertise
+              and technology to help you find the plan that’s right for you. Ensure you
+              and your loved ones are protected.</p>
+            <button class=" z-10 relative">
+              <a href="#"
+                class="button__main fs-300 border-[hsl(var(--clr-neutral-3))]  hover:bg-[hsl(var(--clr-neutral-3))] hover:text-[hsl(var(--clr-neutral-1))] transition-colors ">View
+                plans</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="grid-container my-32">
+      <div class="flex flex-col items-center lg:items-start">
+        <div class="w-40 h-[1px] bg-[hsl(var(--clr-neutral-2))]"></div>
+        <h2 class="fs-900 my-8 mb-16">We’re different</h2>
+        <div class="flex flex-col items-center gap-16 lg:flex-row lg:items-start">
+          <div class="flex lg:flex-1 max-w-[30rem] flex-col items-center gap-4 text-center lg:text-left lg:items-start">
+            <img src="./images/icon-snappy-process.svg" alt="diff-icon">
+            <h3 class="fs-800">Snappy Process</h3>
+            <p>Our application process can be completed in minutes, not hours. Don’t get
+              stuck filling in tedious forms.</p>
+          </div>
+          <div class="flex lg:flex-1 max-w-[30rem] flex-col items-center gap-4 text-center lg:text-left lg:items-start">
+            <img src="./images/icon-snappy-process.svg" alt="diff-icon">
+            <h3 class="fs-800">Affordable Prices</h3>
+            <p>We don’t want you worrying about high monthly costs. Our prices may be low,
+              but we still offer the best coverage possible.</p>
+          </div>
+          <div class="flex lg:flex-1 max-w-[30rem] flex-col items-center gap-4 text-center lg:text-left lg:items-start">
+            <img src="./images/icon-snappy-process.svg" alt="diff-icon">
+            <h3 class="fs-800">People First</h3>
+            <p>Our plans aren’t full of conditions and clauses to prevent payouts. We make
+              sure you’re covered when you need it.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="grid-container mb-32">
+      <div
+        class="bg-[hsl(var(--clr-primary-1))] py-20 overflow-hidden px-4 lg:px-24 flex flex-col gap-8 text-[hsl(var(--clr-neutral-3))] lg:gap-0 text-center items-center justify-between relative lg:flex-row">
+        <img class="absolute lg:hidden flex top-0 right-0" src="./images/bg-pattern-how-we-work-mobile.svg"
+          alt="bg-pattern">
+        <img class="absolute lg:flex hidden top-0 right-0" src="./images/bg-pattern-how-we-work-desktop.svg"
+          alt="bg-pattern">
+        <h2 class="fs-900 z-10 relative lg:flex-[1.15] lg:text-left">Find out more about how we work</h2>
+        <div class="z-10 relative lg:flex-[.85] flex items-end justify-end">
+          <button>
+            <a href="#"
+              class="button__main border-[hsl(var(--clr-neutral-3))] hover:bg-[hsl(var(--clr-neutral-3))] hover:text-[hsl(var(--clr-neutral-1))]  transition-colors fs-300">How
+              we work</a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="mt-auto bg-[hsl(var(--clr-neutral-3))] relative w-full">
+    <img class="absolute sm:hidden flex left-0 top-0" src="./images/bg-pattern-footer-mobile.svg" alt="bg-pattern">
+    <img class="absolute sm:flex hidden left-0 top-0" src="./images/bg-pattern-footer-desktop.svg" alt="bg-pattern">
+    <div class="grid-container z-10 relative">
+      <div class="my-24 flex flex-col items-center gap-8">
+        <div class="flex sm:justify-between flex-col gap-8 sm:flex-row items-center w-full">
+          <a href="#"><img src="./images/logo.svg" alt="logo"></a>
+          <div class="flex items-center gap-4">
+            <a class="social-media-icon" href="#"><img src="./images/icon-facebook.svg" alt="social-media-icon"></a>
+            <a class="social-media-icon" href="#"><img src="./images/icon-twitter.svg" alt="social-media-icon"></a>
+            <a class="social-media-icon" href="#"><img src="./images/icon-pinterest.svg" alt="social-media-icon"></a>
+            <a class="social-media-icon" href="#"><img src="./images/icon-instagram.svg" alt="social-media-icon"></a>
+          </div>
+        </div>
+        <div class="w-full h-[1px] bg-[hsl(var(--clr-neutral-2))] my-4"></div>
+        <div class="grid w-full gap-8 text-center md:text-left"
+          style="grid-template-columns: repeat(auto-fit, minmax(min(15rem, 100%), 1fr));">
+          <div class="space-y-8 uppercase font-bold">
+            <h4 class="ff-primary-1 text-[hsl(var(--clr-neutral-2))]">Our company</h4>
+            <div class="flex flex-col gap-4">
+              <a class="hover:underline" href="#">How we work</a>
+              <a class="hover:underline" href="#">Why Insure?</a>
+              <a class="hover:underline" href="#">View plans</a>
+              <a class="hover:underline" href="#">Reviews</a>
+            </div>
+          </div>
+          <div class="space-y-8 uppercase font-bold">
+            <h4 class="ff-primary-1 text-[hsl(var(--clr-neutral-2))]">Help me</h4>
+            <div class="flex flex-col gap-4">
+              <a class="hover:underline" href="#">FAQ</a>
+              <a class="hover:underline" href="#">Terms of use</a>
+              <a class="hover:underline" href="#">Privacy policy</a>
+              <a class="hover:underline" href="#">Cookies</a>
+            </div>
+          </div>
+          <div class="space-y-8 uppercase font-bold">
+            <h4 class="ff-primary-1 text-[hsl(var(--clr-neutral-2))]">Contact</h4>
+            <div class="flex flex-col gap-4">
+              <a class="hover:underline" href="#">Sales</a>
+              <a class="hover:underline" href="#">Support</a>
+              <a class="hover:underline" href="#">Live chat</a>
+            </div>
+          </div>
+          <div class="space-y-8 uppercase font-bold">
+            <h4 class="ff-primary-1 text-[hsl(var(--clr-neutral-2))]">Others</h4>
+            <div class="flex flex-col gap-4">
+              <a class="hover:underline" href="#">Careers</a>
+              <a class="hover:underline" href="#">Press</a>
+              <a class="hover:underline" href="#">Licenses</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
